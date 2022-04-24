@@ -94,7 +94,7 @@ void Session::clConnectionTerminated(int errorCode)
 
     case ML_ERROR_NO_VIDEO_FRAME:
         s_ActiveSession->m_UnexpectedTermination = true;
-        emit s_ActiveSession->displayLaunchError(tr("Your network connection isn't performing well. Reduce your video bitrate setting or try a faster connection."));
+        emit s_ActiveSession->displayLaunchError(tr("Wait..."));
         break;
 
     case ML_ERROR_UNEXPECTED_EARLY_TERMINATION:

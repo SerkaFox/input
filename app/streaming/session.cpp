@@ -1378,7 +1378,7 @@ void Session::execInternal()
     SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
     SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
 
-    m_Window = SDL_CreateWindow("Moonlight",
+    m_Window = SDL_CreateWindow("PartyZone Stream",
                                 x,
                                 y,
                                 width,
@@ -1389,7 +1389,7 @@ void Session::execInternal()
                     "SDL_CreateWindow() failed with platform flags: %s",
                     SDL_GetError());
 
-        m_Window = SDL_CreateWindow("Moonlight",
+        m_Window = SDL_CreateWindow("PartyZone Stream",
                                     x,
                                     y,
                                     width,

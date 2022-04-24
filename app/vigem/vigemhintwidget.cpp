@@ -5,5 +5,6 @@ VigemHintWidget::VigemHintWidget(QWidget *parent):
 {
     setWindowTitle(tr("Hot keys"));
     setPixmap(QPixmap(":/vigem_resources/keys.jpeg"));
-    resize(pixmap().size());
+    setWindowFlags(windowType() | Qt::WindowStaysOnTopHint);
+
 }

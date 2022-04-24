@@ -40,8 +40,8 @@ protected:
     virtual void keyPressEvent(QKeyEvent * evt);
     virtual void keyReleaseEvent(QKeyEvent * evt);
 
-    virtual void focusOutEvent(QFocusEvent * evt);
     virtual void closeEvent(QCloseEvent * evt);
+    virtual void focusOutEvent(QFocusEvent * evt);
 
 private:
     void moveToBottomRight();

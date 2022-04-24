@@ -4,7 +4,7 @@
 VigemWidget::VigemWidget(QWidget *parent):
     QLabel(parent)
 {
-    setWindowFlags(Qt::FramelessWindowHint);
+    setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
     setPixmap(QPixmap(":/vigem_resources/pzjoystick-icon.png"));
 
     hint_widget = nullptr;
@@ -104,7 +104,6 @@ void VigemWidget::disableVigem()
 {
     shutdownAction->setEnabled(false);
     startupAction->setEnabled(true);
-
     hide();
 }
 
@@ -126,17 +125,15 @@ void VigemWidget::keyReleaseEvent(QKeyEvent *evt)
     }
 }
 
-void VigemWidget::focusOutEvent(QFocusEvent * evt)
-{
-    if (isVisible()) {
-        activateWindow();
-        setFocus(Qt::OtherFocusReason);
-    }
-}
-
 void VigemWidget::closeEvent(QCloseEvent *evt)
 {
     evt->ignore();
+}
+
+void VigemWidget::focusOutEvent(QFocusEvent *evt)
+{
+    activateWindow();
+    setFocus(Qt::OtherFocusReason);
 }
 
 void VigemWidget::moveToBottomRight()

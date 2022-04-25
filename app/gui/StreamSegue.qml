@@ -162,7 +162,7 @@ Item {
             // in the hintText control itself to synchronize
             // with Session.exec() which requires no concurrent
             // gamepad usage.
-            hintText.text = qsTr("Tip:") + " " + qsTr("ALT+H/keyboard, ALT+Enter/Fullscreen, %1/Quit").arg(SdlGamepadKeyNavigation.getConnectedGamepads() > 0 ?
+            hintText.text = qsTr("Tip:") + " " + qsTr("ALT+Enter/Fullscreen, ALT+C/keyboard, %1/Quit").arg(SdlGamepadKeyNavigation.getConnectedGamepads() > 0 ?
                                                   qsTr("Start+Select+L1+R1") : qsTr("ALT+Q"))
 
             // Stop GUI gamepad usage now

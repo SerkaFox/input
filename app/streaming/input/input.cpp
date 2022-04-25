@@ -102,8 +102,8 @@ SdlInputHandler::SdlInputHandler(StreamingPreferences& prefs, NvComputer*, int s
     m_SpecialKeyCombos[KeyComboToggleMouseMode].enabled = true;
 
     m_SpecialKeyCombos[KeyComboToggleCursorHide].keyCombo = KeyComboToggleCursorHide;
-    m_SpecialKeyCombos[KeyComboToggleCursorHide].keyCode = SDLK_c;
-    m_SpecialKeyCombos[KeyComboToggleCursorHide].scanCode = SDL_SCANCODE_C;
+    m_SpecialKeyCombos[KeyComboToggleCursorHide].keyCode = SDLK_v;
+    m_SpecialKeyCombos[KeyComboToggleCursorHide].scanCode = SDL_SCANCODE_V;
     m_SpecialKeyCombos[KeyComboToggleCursorHide].enabled = true;
 
     m_SpecialKeyCombos[KeyComboToggleMinimize].keyCombo = KeyComboToggleMinimize;
@@ -112,8 +112,8 @@ SdlInputHandler::SdlInputHandler(StreamingPreferences& prefs, NvComputer*, int s
     m_SpecialKeyCombos[KeyComboToggleMinimize].enabled = QGuiApplication::platformName() != "eglfs";
 
     m_SpecialKeyCombos[KeyComboPasteText].keyCombo = KeyComboPasteText;
-    m_SpecialKeyCombos[KeyComboPasteText].keyCode = SDLK_v;
-    m_SpecialKeyCombos[KeyComboPasteText].scanCode = SDL_SCANCODE_V;
+    m_SpecialKeyCombos[KeyComboPasteText].keyCode = SDLK_b;
+    m_SpecialKeyCombos[KeyComboPasteText].scanCode = SDL_SCANCODE_B;
     m_SpecialKeyCombos[KeyComboPasteText].enabled = true;
 
     m_SpecialKeyCombos[KeyComboTogglePointerRegionLock].keyCombo = KeyComboTogglePointerRegionLock;
@@ -122,8 +122,8 @@ SdlInputHandler::SdlInputHandler(StreamingPreferences& prefs, NvComputer*, int s
     m_SpecialKeyCombos[KeyComboTogglePointerRegionLock].enabled = true;
 
     m_SpecialKeyCombos[KeyComboActivateVigem].keyCombo = KeyComboActivateVigem;
-    m_SpecialKeyCombos[KeyComboActivateVigem].keyCode = SDLK_h;
-    m_SpecialKeyCombos[KeyComboActivateVigem].scanCode = SDL_SCANCODE_H;
+    m_SpecialKeyCombos[KeyComboActivateVigem].keyCode = SDLK_c;
+    m_SpecialKeyCombos[KeyComboActivateVigem].scanCode = SDL_SCANCODE_C;
     m_SpecialKeyCombos[KeyComboActivateVigem].enabled = true;
 
 
